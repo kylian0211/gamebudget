@@ -1,0 +1,215 @@
+/* ======= Fichier CSS principal : style.css ======= */
+
+/* Importation de la police Orbitron */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+:root {
+  --primary-color: #ff0000;
+  --background-color: #0e0e0e;
+  --text-color: #ffffff;
+  --accent-color: #ff4d4d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+.produits-section {
+  padding: 2rem;
+  text-align: center;
+  background-color: #0d0d0d;
+}
+
+.produits-section h2 {
+  color: #ff0000;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #ff0000;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.product-card {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 260px;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(0.95);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  border: 2px solid #ff0000;
+}
+
+.product-card h3 {
+  color: #ff0000;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #ccc;
+}
+
+.btn-acheter {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #ff0000;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-acheter:hover {
+  background-color: #b30000;
+}
+
+header {
+  background: linear-gradient(to right, #1a1a1a, #0e0e0e);
+  text-align: center;
+  padding: 2rem;
+  border-bottom: 1px solid #222;
+}
+
+header h1 {
+  color: var(--primary-color);
+  font-size: 3rem;
+  letter-spacing: 3px;
+}
+
+header p {
+  color: #999;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: radial-gradient(ellipse at center, #1a1a1a 0%, #000000 100%);
+  animation: pulse 8s infinite;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.product:hover {
+  transform: scale(1.02);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product h3 {
+  font-size: 1.2rem;
+  padding: 1rem;
+  color: var(--text-color);
+}
+
+.product p {
+  padding: 0 1rem 1rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  background-color: #111;
+  margin-top: 4rem;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #1a1a1a;
+  }
+  50% {
+    background-color: #0e0e0e;
+  }
+  100% {
+    background-color: #1a1a1a;
+  }
+}
+.background-pulse {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle at center, #1a1a1a 0%, #0e0e0e 100%);
+  transition: transform 0.2s ease;
+}
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #1e40af;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #3b82f6;
+}
