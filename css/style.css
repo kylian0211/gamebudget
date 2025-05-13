@@ -213,3 +213,128 @@ footer {
 .cta-button:hover {
   background-color: #3b82f6;
 }
+.temu-only p {
+  display: none;
+}
+
+.temu-only span {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+/* Bouton toggle */
+.toggle-button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 1rem;
+}
+
+.toggle-button:hover {
+  background-color: #a40000;
+}
+
+/* Section cachée */
+.hidden {
+  display: none;
+}
+
+/* Grille horizontalement alignée */
+.shortcut-grid {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.shortcut-card {
+  background-color: #1c1c1c;
+  border: 1px solid #444;
+  border-radius: 16px;
+  padding: 1.5rem;
+  width: 260px;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+}
+
+.shortcut-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 12px red;
+}
+
+/* Cacher titre/desc pour Temu */
+.temu-only h3,
+.temu-only p {
+  display: none;
+}
+
+.temu-only span {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+.shortcut-card.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  background-color: #2a2a2a;
+}
+
+.shortcut-card.disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+.highlighted-title {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+  color: #ff4d4d;
+  text-shadow: 0 0 10px rgba(255, 77, 77, 0.5);
+  font-family: 'Orbitron', sans-serif;
+}
+.vitrine-produits {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.vitrine-card {
+  background-color: #1a1a1a;
+  border: 2px solid #ff0000;
+  border-radius: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  width: 200px;
+  transition: transform 0.3s;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+.vitrine-card:hover {
+  transform: scale(1.05);
+}
+
+.vitrine-card img {
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.vitrine-card p {
+  padding: 1rem;
+  font-size: 0.95rem;
+  color: #fff;
+}
