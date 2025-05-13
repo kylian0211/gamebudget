@@ -1,39 +1,92 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GameBudget - Accessoires Gamer Pas Chers</title>
   <link rel="stylesheet" href="css/style.css">
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M48F78FCM3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-M48F78FCM3');
-</script>
 </head>
 <body>
+
   <div class="background-pulse"></div>
 
-  <main>
-    <section class="hero">
-      <div class="overlay"></div>
-      <div class="hero-content">
-        <h2>Équipe-toi sans te ruiner</h2>
-        <p>Comparatifs, bons plans et sélections Amazon pour les gamers futés.</p>
-        <a href="produits/produits.html" class="cta">Voir les produits</a>
-      </div>
-    </section>
+ <main>
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2>Équipe-toi sans te ruiner</h2>
+      <p>Decouvre notre sélection d’accessoires gamers à petit prix sur Amazon & Temu
+        et compare entre temu et amazon voir le quelle t'avantage le mieux</p>
+    </div>
+  </section>
 
-    <section id="products" class="products">
-      <h2>Notre sélection</h2>
-      <div class="product-grid">
-        <!-- Les produits seront insérés ici via JS -->
-      </div>
-    </section>
+  <!-- 🔥 Bloc des raccourcis vers Amazon, Temu et Comparatif -->
+  <section class="shortcuts">
+  <div class="shortcut-toggle-container">
+    <button class="toggle-button" onclick="toggleShortcuts()">Voir les sélections</button>
+
+    <div id="shortcut-section" class="shortcut-grid hidden">
+      <a href="produits/produits.html" class="shortcut-card">
+        <h3>🎮 Produits Amazon</h3>
+        <p>Les accessoires les plus vendus sur Amazon.</p>
+      </a>
+      <a href="produits/temu.html" class="shortcut-card temu-only">
+        <h3>🛒 Produits Temu</h3>
+        <p>Des accessoires gaming pas chers trouvés sur Temu.</p>
+        <span>arrive prochainement</span>
+      </a>
+      <a href="produits/comparatif.html" class="shortcut-card">
+        <h3>⚖️ Comparatif Amazon vs Temu</h3>
+        <p>arrive prochainement</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="produits-section">
+  <h2 class="highlighted-title">🔥 Meilleures Sélections 🔥</h2>
+  <div class="product-grid">
+    
+    <!--palette -->
+    <div class="product-card">
+      <img src="Assets/images/palette blanc.jpg" alt="Palettes pro">
+      <h3>Palettes pro</h3>
+      <p>70€ - 80€ contre 220€ une manette scuf qui utilise les mêmes fonctions</p>
+      <a href="https://www.amazon.com.be/Contr%C3%B4leur-Fixation-Fonction-Cartographie-Programmables/dp/B0DK8GH8JS?crid=XHDUP6RNQWZ&sprefix=palette%20arrière&linkCode=ll1&tag=gamebudget-21&ref_=as_li_ss_tl" class="btn-acheter" target="_blank">Voir l'article</a>
+    </div>
+
+    <!-- Écran -->
+    <div class="product-card">
+      <img src="assets/images/ecran120hz-1.jpg" alt="Écran Gaming">
+      <h3>Écran 165Hz</h3>
+      <p>Une fluidité parfaite pour le tryhard ou les FPS.</p>
+      <a href="https://www.amazon.com.be/KEEP-OUT-XGM22v4-FullHD-Moniteur/dp/B0DT9K6KNZ?crid=2FUCTYSB54K8J&dib=eyJ2IjoiMSJ9.DZhQpLCnbkf1Oyx4kqiwyunYvMOJFVMdvyK4DoRos8uhzCP2FeTSN68FkVeZ7gSUm1lRpWaCd7_l3ZTpQubOXdn1Jjv-E8aHVjU46u8CMTQyhaw2iN2AhhPk9IgNR4lutbb_f4BxYzcXE27C1THcR5_0wXrdFQ53yQ-bkTCEL7G2Tg0LaBhTGSndWVFHzshXvOU-wxICbzNp2Bd4dGlVLmybbARkrvsho9BnRT0oHUgNiDykLCq12-DEN9bro_hifn_XBOtyfN9-1EseV9rQGnLvjKqzR7muQJIgCVDIx6s.mU1zikYE16MRj4JMzZ1PiBUK8rc-mVi2o_2P9tyBFi4&dib_tag=se&keywords=%C3%A9cran+120hz&qid=1746719687&s=electronics&sprefix=%C3%A9cran%2Celectronics%2C151&sr=1-2&linkCode=ll1&tag=gamebudget-21&linkId=735176112fab1084d3b6c6f98ce3c86a&language=fr_BE&ref_=as_li_ss_tl
+                  " class="btn-acheter" target="_blank">Voir l'article</a>
+    </div>
+
+    <!-- LED RGB -->
+    <div class="product-card">
+      <img src="assets/images/led.jpg" alt="LED RGB">
+      <h3>LED RGB Ambiance</h3>
+      <p>Transforme ta chambre avec des effets RGB stylés.</p>
+      <a href="https://www.amazon.com.be/synchronisation-t%C3%A9l%C3%A9commande-r%C3%A9tro%C3%A9clairage-t%C3%A9l%C3%A9vision-ordinateurs/dp/B0D8WBFWFF?dib=eyJ2IjoiMSJ9.6WP46YWeTY7Ys2R78dHobpnZWNVZYCZeCsZE1ArKfx20ikCBZJm3df4LXEMps6_KpNXe1yYM3OnUbJV8IEtZynM8FCE-QjoJVMhG_fX034MhNYmFm2VISvEUYp7_EzKYJwQsUiiPzcnyBj9a9WNwIt7YeLIlay-b8-cujBUEHdtQNX0zXtY-ubhd0KUmQk3b5m0zM5XC7I9vmygddZUsok5-obQIGHVPbIaWkSODyzM-itkogPs6w5YqY3iwdiZb8FbWz4HBDT1hhnRN3_gxYF4ORrzUjdSmmB9mBP910w4.q-Ejf4l3E8q4goYl3j5dRXadIHySg4kAmFV8QCFk_Kk&dib_tag=se&keywords=decoration+setup+gamer&qid=1747053931&s=electronics&sr=1-3-catcorr&linkCode=ll1&tag=gamebudget-21&linkId=451c1e752ad875b75a06480fae2b81a2&language=fr_BE&ref_=as_li_ss_tl" class="btn-acheter" target="_blank">Voir l'article</a>
+    </div>
+
+     <!-- LED RGB -->
+    <div class="product-card">
+      <img src="assets/images/support casque 2.jpg" alt="SUPPORT CASQUE">
+      <h3>SUPPORT CASQUE GAMER</h3>
+      <p>Si tu as un compte amazon prime profite d'une promo, en plus des barres led a 15€ pour un setup coloré à moins de 40€</p>
+      <a href="https://www.amazon.com.be/Support-KDD-Rotatif-Lumi%C3%A8re-Manette/dp/B0B7JSWD4F?crid=20DPH6E5X2RTI&dib=eyJ2IjoiMSJ9.vy3a0dd4uLjw5d_YUBalYBBHQhXNdPVP6ytPt29oQPaQHUyCJVlETxIvHXoeMv9DMEhIcYpSypcrQR-Zh65uTCzBNHIeI2JOhlpns7Y-9kSpf2hetzDqyTND1mMzyloi847t8W12ElHcUw-YgH8BwVJGqZ73ZFknrWvreoylohJoVoPzw1dgGVS7Ro9AwXZquut0FgSfB75-kyJxviPB9SVkvTzgpQpmy7UZuKYl2-ZF18pPyk3lBPZQqsj3Lr8NQogGchGwKvXoUzKtDnqrGRUhwzdF4bJ2rNAMmBdK3fA.TYa6G0vvs9GxFIRrUg3fKblOb7zaoDOQlX3oWrA733U&dib_tag=se&keywords=support%2Bcasque%2Bgamer%2Bkdd%2Bporte%2Bcasque%2Brotatif&qid=1747147120&s=electronics&sprefix=support%2Bcasque%2Bgamer%2Bkdd%2Bporte%2Bcasque%2Brotatif%2Celectronics%2C190&sr=1-4&th=1&linkCode=ll1&tag=gamebudget-21&linkId=a5427f5bdfd8cae00708bc10d398913f&language=fr_BE&ref_=as_li_ss_tl" class="btn-acheter" target="_blank">Voir l'article</a>
+    </div>
+</section>
+
+  <div class="product-grid">
+    <!-- Les produits seront insérés ici via JS -->
+  </div>
+</section>
+
   </main>
 
   <footer>
@@ -45,5 +98,12 @@
   </footer>
   
   <script src="js/main.js"></script>
+  <script>
+  function toggleShortcuts() {
+    const section = document.getElementById("shortcut-section");
+    section.classList.toggle("hidden");
+  }
+</script>
+
 </body>
 </html>
